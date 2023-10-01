@@ -1,0 +1,143 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image:  
+        linear-gradient(to bottom, rgba(0, 163, 122, 0.3) 0%, rgba(0, 0, 0, 0.541) 100%), /* Gradient overlay */
+        url('1.jpg'); /* Ganti dengan URL gambar latar belakang yang Anda inginkan */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #03030325; /* Latar belakang putih */
+    border: 1px solid #ddd; /* Tambahkan border */
+    border-radius: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Menggunakan jenis font Montserrat */
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#search-input {
+    width: 90%;
+    padding: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    margin-bottom: 16px;
+    background-color: #026650; /* Latar belakang putih */
+    text-align: center; /* Pusatkan teks placeholder */
+    flex: 1;
+    border-bottom: 4px solid #008547;
+}
+
+#search-input::placeholder {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-align: center; /* Pusatkan teks placeholder */
+    color: #ffffff;
+}
+
+#search-input:focus {
+    border-bottom: 4px solid #00df77;
+}
+
+#search-results {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+#search-results li {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#search-results li:hover {
+    background-color: #f5f5f5;
+}
+
+#search-results li:last-child {
+    border-bottom: none;
+}
+
+.search-guide {
+    background-color: #fff; /* Latar belakang putih */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+}
+.search-guide summary {
+    cursor: pointer;
+}
+
+/* Latar belakang putih pada Panduan Penggunaan Mesin Pencari */
+#search-guide-container {
+    background-color: #fff; /* Latar belakang putih */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+/* Gaya untuk tombol dropdown pada Panduan Penggunaan Mesin Pencari */
+#search-guide-container summary {
+    cursor: pointer;
+}
+
+/* Tombol "Kembali ke Beranda" */
+#back-to-home {
+    background-color: #008547; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    border: none; /* Hapus border */
+    padding: 10px 20px; /* Padding tombol */
+    border-radius: 4px; /* Sudut bulat */
+    cursor: pointer; /* Kursor jadi tangan saat mengarahkan */
+    font-weight: bold; /* Teks bold */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+    margin: 10px;
+}
+
+#back-to-home:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .search-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        padding: 16px;
+    }
+}
